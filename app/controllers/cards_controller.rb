@@ -1,7 +1,7 @@
 class CardsController < ApplicationController
 
   def index
-    render json: Card.all
+    render json: current_user.cards
   end
 
   def create
